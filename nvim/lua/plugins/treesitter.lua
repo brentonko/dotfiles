@@ -35,14 +35,23 @@ local M = {
                             },
         sync_install = true,
         ignore_install = {}, -- List of parsers to ignore installation
-        -- #refactor = {
-        -- #    highlight_definitions = {
-        -- #        enable = true,
-        -- #        -- Set to false if you have an `updatetime` of ~100.
-        -- #        clear_on_cursor_move = true,
-        -- #    },
-        -- #    highlight_current_scope = { enable = false },
-        -- #},
+        refactor = {
+            highlight_definitions = {
+                enable = true,
+                -- Set to false if you have an `updatetime` of ~100.
+                clear_on_cursor_move = true,
+            },
+            highlight_current_scope = { enable = false },
+            refactor = {
+                smart_rename = {
+                    enable = true,
+                    -- Assign keymaps to false to disable them, e.g. `smart_rename = false`.
+                    keymaps = {
+                        smart_rename = "grr",
+                    },
+                },
+            },
+        },
 
         highlight = {
             enable = true,
