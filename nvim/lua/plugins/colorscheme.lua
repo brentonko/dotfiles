@@ -5,7 +5,7 @@ local M = {
     opts = function()
         local colors = require("utils").git_colors
         return {
-            style = "tokyonight",
+            style = "night",
             -- hide_inactive_statusline = true,
             on_highlights = function(hl, c)
                 hl.GitSignsAdd = {

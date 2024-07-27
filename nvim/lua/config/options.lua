@@ -8,7 +8,7 @@ vim.opt.title = true
 
 -- basic options
 vim.opt.syntax = "on"
-vim.opt.guifont = "Hack Nerd Font Mono:h11"
+vim.opt.guifont = "Hack Nerd Font Mono:h10"
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 100
