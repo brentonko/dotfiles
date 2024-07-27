@@ -47,19 +47,21 @@ vim.opt.wildmode = "longest:full:full"
 
 -- folding settings
 vim.opt.foldmethod = "expr"   -- fold based on indent
-vim.opt.foldlevelstart = 99
---vim.opt.foldlevel = 99
 vim.opt.foldcolumn = "1"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.fillchars = {
-	foldopen = "",
-	foldclose = "",
-	fold = " ",
-	foldsep = " ",
-	diff = "/",
-	eob = " ",
+    foldopen = "",
+    foldclose = "",
+    fold = " ",
+    foldsep = " ",
+    diff = "/",
+    eob = " ",
 }
+--vim.opt.statuscolumn = "%=%l%s%C"
+
 
 --vim.opt.formatoptions-=o -- dont continue comments when pushing o/O
 
